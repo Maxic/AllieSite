@@ -1,0 +1,119 @@
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr 2fr; 
+	grid-template-rows: 1fr 1fr;
+	margin: 0;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	font-family: Raleway;
+	padding: 0;
+}
+
+.body {
+	padding: 0;
+}
+
+.grid-item-4 {
+	background-color: #AEC6CF;
+	height: 100vh;
+	width: 30vw;
+	margin: 0
+	padding: 0;
+}
+
+.grid-item-5 {
+	background-color: #FAF1D6;
+	height: 100vh;
+	width: 800vw;
+	padding: 0;
+}
+
+.grid-item-1 {
+	background-color: #AEC6CF;
+	height: 100vh;
+	width: 20vw;
+	padding: 0;
+}
+
+.grid-item-2 {
+	background-color: #FAF1D6;
+	height: 100vh;
+	width: 60vw;
+	padding: 0;
+}
+
+.grid-item-3 {
+	background-color: #AEC6CF;
+	height: 100vh;
+	width: 20vw;
+	padding: 0;
+}
+
+.rotate90 {
+	transform: rotate(90deg);
+}
+
+.art-item {
+	margin-right: 150px;
+	margin-left: 50px;
+}
+
+.art-item2 {
+	margin-top: 250px
+}
+
+.art-item3 {
+	margin-top: 150px
+}
+
+.grid-detail-image {
+	background-color: #AEC6CF;
+	height: 100vh;
+	width: 70vw;
+	padding: 0;
+}
+
+.detail-image {
+	margin-top: 10%;	
+	margin-left: 10%;
+}
+
+.grid-detail-description {
+	background-color: #AEC6CF;
+	height: 100vh;
+	width: 40vw;
+	padding: 0;
+}
+
+.arrow-right {
+	position: fixed;
+	bottom: 50vh;
+	right: .2vw;
+}
+
+.arrow-right:hover {
+	position: fixed;
+	bottom: 50vh;
+	right: 0vw;
+}
+
+.arrow-left {
+	position: fixed;
+	bottom: 50vh;
+	left: .2vw;
+	transform: rotate(180deg);
+}
+
+.arrow-left:hover {
+	position: fixed;
+	bottom: 50vh;
+	transform: rotate(180deg);
+	left: 0vw;
+}
+
+.detail-description {
+	margin-top: 10%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
