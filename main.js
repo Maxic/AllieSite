@@ -29,8 +29,20 @@ document.querySelectorAll('.grid-item-5').forEach(function (item) {
   item.style.backgroundColor = color5;
 });
 
+var page = localStorage.getItem('currentpage')
 
-function next(){
+if (page == undefined){
+	localStorage.setItem('currentpage', 0)	
+} else {
+	if (page != 0 ){
+		document.querySelectorAll('.grid-container')[0].style.cssText = "display: none;"
+		document.querySelectorAll('.grid-container')[page].style.cssText = ''
+	}
+}
+
+
+
+function next_page(){
 	var arr = document.querySelectorAll('.grid-container');
 	for (i = 0; i < arr.length; i++) { 
 		if(arr[i].style.cssText == "display: none;") {
@@ -38,15 +50,17 @@ function next(){
 			var next = i+1;
 			if (next > arr.length-1) {next = 0};
 			arr[next].style.cssText = "display: none;";
+			localStorage.setItem('currentpage', i)
 			break;
 		}	 
 	}
 }
 
-function prev(){
+function prev_page(){
 	var arr = document.querySelectorAll('.grid-container');
 	for (i = 0; i < arr.length; i++) { 
 		if(arr[i].style.cssText == "display: none;") {
+			localStorage.setItem('currentpage', i)
 			arr[i].style.cssText = '';
 			var next = i-1;
 			if (next < 0) {next = arr.length-1};

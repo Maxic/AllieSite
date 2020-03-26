@@ -9,6 +9,4 @@ function random_pick_and_remove(items) {
 
 var color1 = random_pick_and_remove(pallette);
 
-document.querySelectorAll('.grid-container').forEach(function (item) {
-  item.style.backgroundColor = color1;
-});
+document.querySelector('.grid-container').style.backgroundColor = color1;
