@@ -29,45 +29,35 @@ document.querySelectorAll('.grid-item-5').forEach(function (item) {
   item.style.backgroundColor = color5;
 });
 
-var page = localStorage.getItem('currentpage')
-
+var page = localStorage.getItem('currentpage');
 if (page == undefined){
-	localStorage.setItem('currentpage', 0)	
-} else {
-	if (page != 0 ){
-		document.querySelectorAll('.grid-container')[0].style.cssText = "display: none;"
-		document.querySelectorAll('.grid-container')[page].style.cssText = ''
-	}
-}
-
+	page = 0;
+	localStorage.setItem('currentpage', page);
+} 
+show_page(page);
 
 
 function next_page(){
-	var arr = document.querySelectorAll('.grid-container');
-	for (i = 0; i < arr.length; i++) { 
-		if(arr[i].style.cssText == "display: none;") {
-			arr[i].style.cssText = '';
-			var next = i+1;
-			if (next > arr.length-1) {next = 0};
-			arr[next].style.cssText = "display: none;";
-			localStorage.setItem('currentpage', i)
-			break;
-		}	 
+	page = parseInt(page) + 1
+	if (page >= document.querySelectorAll('.grid-container').length){
+		page =0
 	}
+	show_page(page)
 }
 
 function prev_page(){
-	var arr = document.querySelectorAll('.grid-container');
-	for (i = 0; i < arr.length; i++) { 
-		if(arr[i].style.cssText == "display: none;") {
-			localStorage.setItem('currentpage', i)
-			arr[i].style.cssText = '';
-			var next = i-1;
-			if (next < 0) {next = arr.length-1};
-			arr[next].style.cssText = "display: none;";
-			break;
-		}	 
+	page = parseInt(page) - 1
+	if (page < 0){
+		page = document.querySelectorAll('.grid-container').length-1
 	}
+	show_page(page)
+}
+
+function show_page(page){
+	document.querySelectorAll('.grid-container').forEach(function (item){
+		item.style.cssText = "display: none;"	
+	});
+	document.querySelectorAll('.grid-container')[parseInt(page)].style.cssText = ""
 }
 
 //document.cookie = 'cookie1='+color1+'; expires=Fri, 19 Jun 2020 20:47:11 UTC; path=/';
