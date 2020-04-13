@@ -1,12 +1,10 @@
 .grid-container {
 	display: grid;
-	grid-template-columns: 1fr 2fr; 
-	grid-template-rows: 1fr 1fr;
-	margin: 0;
 	height: 100vh;
 	width: 100vw;
 	display: flex;
 	font-family: Raleway;
+	margin: 0;
 	padding: 0;
 }
 
@@ -38,7 +36,7 @@
 .grid-item-4 {
 	background-color: #AEC6CF;
 	height: 100vh;
-	width: 30vw;
+	width: 40vw;
 	margin: 0
 	padding: 0;
 }
@@ -46,7 +44,7 @@
 .grid-item-5 {
 	background-color: #FAF1D6;
 	height: 100vh;
-	width: 70vw;
+	width: 60vw;
 	padding: 0;
 }
 
@@ -58,14 +56,8 @@
 	padding: 0;
 }
 
-.grid-item-7s {
-	background-color: #FAF1D6;
-	height: 100vh;
-	width: 30vw;
-	padding: 0;
-}
 
-.grid-item-8 {
+.grid-item-7 {
 	background-color: #c9ffe3;
 	height: 50vh;
 	width: 70vw;
@@ -73,10 +65,38 @@
 	padding: 0;
 }
 
-.grid-item-9 {
+.grid-item-8 {
 	background-color: #f2ffc9;
 	height: 50vh;
 	width: 70vw;
+	padding: 0;
+}
+
+.grid-item-41 {
+	background-color: black;
+	height: 20vh;
+	width: 100vw;
+	padding: 0;
+}
+
+.grid-item-42 {
+	background-color: blue;
+	height: 40vh;
+	width: 50vw;
+	padding: 0;
+}
+
+.grid-item-43 {
+	background-color: red;
+	height: 40vh;
+	width: 50vw;
+	padding: 0;
+}
+
+.grid-item-44 {
+	background-color: green;
+	height: 20vh;
+	width: 100vw;
 	padding: 0;
 }
 
@@ -91,7 +111,7 @@
 }
 
 .art-item2 {
-	margin-top: 50vh
+	margin-top: 30vh
 }
 
 .art-item3 {
