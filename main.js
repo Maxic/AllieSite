@@ -42,6 +42,7 @@ function next_page(){
 	if (page >= document.querySelectorAll('.grid-container').length){
 		page =0
 	}
+	localStorage.setItem('currentpage', page);
 	show_page(page)
 }
 
@@ -50,6 +51,7 @@ function prev_page(){
 	if (page < 0){
 		page = document.querySelectorAll('.grid-container').length-1
 	}
+	localStorage.setItem('currentpage', page);
 	show_page(page)
 }
 
