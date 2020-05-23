@@ -1,4 +1,5 @@
-const pallette = ["rgba(253, 175, 171, .5)", "rgba(250, 241, 214, .5)", "rgba(182, 227, 233, .5)", "rgba(250, 222, 225, .5)", "rgba(250, 212, 174, .5)", "rgba(217, 241, 241, .5)"]
+//const pallette = [""]
+const pallette = ["#F5DEB3", "#FFF5EE", "#FFF0F5", "#DCDCDC", "#FFFFF0", "#7FFFD4", "#EEE8AA", "rgba(253, 175, 171, .5)", "rgba(250, 241, 214, .5)", "rgba(182, 227, 233, .5)", "rgba(250, 222, 225, .5)", "rgba(250, 212, 174, .5)", "rgba(217, 241, 241, .5)"];
 
 function random_pick_and_remove(items) {
 	let index = ~~(items.length * Math.random());
@@ -15,7 +16,7 @@ var color5 = random_pick_and_remove(pallette);
 
 document.querySelectorAll('.grid-item-1').forEach(function (item) {
   item.style.backgroundColor = color1;
-});
+}); 
 document.querySelectorAll('.grid-item-2').forEach(function (item) {
   item.style.backgroundColor = color2;
 });
@@ -61,5 +62,3 @@ function show_page(page){
 	});
 	document.querySelectorAll('.grid-container')[parseInt(page)].style.cssText = ""
 }
-
-//document.cookie = 'cookie1='+color1+'; expires=Fri, 19 Jun 2020 20:47:11 UTC; path=/';
