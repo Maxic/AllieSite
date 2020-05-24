@@ -100,6 +100,22 @@ body {
 	background-color: green;
 }
 
+.page_six-cell_one {
+	grid-column: 2 / 4;
+	grid-row: 1 / 5;
+	background-color: red;
+}
+.page_six-cell_two { 
+	grid-column: 4 / 8;
+	grid-row: 1 / 9;
+	background-color: blue;
+}
+.page_six-cell_three {
+	grid-column: 1 / 5;
+	grid-row: 5 / 9;
+	background-color: yellow;
+}
+
 .rotate90 {
 	transform: rotate(90deg);
 }
