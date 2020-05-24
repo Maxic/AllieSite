@@ -79,6 +79,27 @@ body {
 	grid-row: 1 / 9;
 }
 
+.page_five-cell_one {
+	grid-column: 1 / 4;
+	grid-row: 1 / 5;
+	background-color: red;
+}
+.page_five-cell_two { 
+	grid-column: 4 / 8;
+	grid-row: 1 / 9;
+	background-color: blue;
+}
+.page_five-cell_three {
+	grid-column: 1 / 5;
+	grid-row: 5 / 9;
+	background-color: yellow;
+}
+.page_five-cell_four {
+	grid-column: 8 / 9;
+	grid-row: 1 / 9;
+	background-color: green;
+}
+
 .rotate90 {
 	transform: rotate(90deg);
 }
