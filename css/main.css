@@ -8,9 +8,11 @@
 	padding: 0;
 }
 
+
 body {
 	margin: 0;
 }
+
 
 .wrapper {
 	display: grid;
@@ -25,6 +27,13 @@ body {
 	text-align: center;
 	background-color: #FEF5EE;
 }
+
+.main-cell_two {
+	grid-column: 1 / 9;
+	grid-row: 1 / 9;
+	text-align: center;
+}
+
 .page_zero-cell_two { 
 	grid-column: 1 / 7;
 	grid-row: 2 / 6;
@@ -132,6 +141,44 @@ body {
 	grid-row: 5 / 9;
 }
 
+.page_seven-cell_one {
+	grid-column: 1/ 5;
+	grid-row: 1 / 9;
+}
+
+.page_seven-cell_two {
+	grid-column: 5 / 9;
+	grid-row: 1 / 9;
+}
+
+.page_eight-cell_one {
+	grid-column: 1/ 9;
+	grid-row: 1 / 5;
+}
+
+.page_eight-cell_two {
+	grid-column: 1 / 9;
+	grid-row: 5 / 9;
+}
+
+.page_nine-cell_one {
+	grid-column: 1 / 9;
+	grid-row: 1 / 9;
+}
+
+.page_ten-cell_one {
+	grid-column: 1 / 9;
+	grid-row: 1 / 5;
+}
+
+.page_ten-cell_two {
+	grid-column: 1 / 9;
+	grid-row: 5 / 9;
+}
+
+
+
+
 .rotate90 {
 	transform: rotate(90deg);
 }
@@ -141,7 +188,6 @@ body {
 	bottom: 25vh;
 	right: 56vw;
 	width: 36%;
-
 }
 
 .art-item2 {
@@ -149,7 +195,6 @@ body {
 	bottom: 25vh;
 	right: 10vw;
 	width: 36%;
-
 }
 
 .art-item3 {
@@ -157,14 +202,139 @@ body {
 	bottom: 20vh;
 	right: 20vw;
 	width: 60%;
-
 }
+
+.art-item4 {
+	position: fixed;
+	bottom: 50vh;
+	right: 20vw;
+	width: 28%;
+}
+
+.art-item5 {
+	position: fixed;
+	bottom: 50vh;
+	right: 56vw;
+	width: 28%;
+}
+
+.art-item6 {
+	position: fixed;
+	bottom: 10vh;
+	right: 20vw;
+	width: 28%;
+}
+
+.art-item7 {
+	position: fixed;
+	bottom: 10vh;
+	right: 56vw;
+	width: 28%;
+}
+
+.art-item8 {
+  	position: fixed;
+	bottom: 50vh;
+	right: 20vw;
+	width: 28%;
+}
+
+.art-item9 {
+ 	position: fixed;
+	bottom: 50vh;
+	right: 56vw;
+	width: 28%;
+}
+
+.art-item10 {
+   	position: fixed;
+	bottom: 10vh;
+	right: 20vw;
+	width: 28%;
+}
+
+.art-item11 {
+   	position: fixed;
+	bottom: 10vh;
+	right: 56vw;
+	width: 28%;
+}
+
+.art-item12 {
+   	position: fixed;
+	bottom: 20vh;
+	right: 25vw;
+	width: 50%;
+}
+
+.art-item13 {
+   	position: fixed;
+	bottom: 10vh;
+	right: 15vw;
+	width: 30%;
+}
+
+.art-item14 {
+   	position: fixed;
+	bottom: 10vh;
+	right: 56vw;
+	width: 30%;
+}
+
+.art-item15 {
+ 	position: fixed;
+	bottom: 10vh;
+	right: 36vw;
+	width: 30%;
+}
+
+.art-item16 {
+ 	position: fixed;
+	bottom: 10vh;
+	right: 14vw;
+	width: 73%;
+}
+
+.art-item17 {
+    position: fixed;
+    bottom: 8vh;
+    right: 38vw;
+    width: 28%;
+}
+
+.art-item18 {
+    position: fixed;
+    bottom: 7vh;
+    right: 14vw;
+    width: 70%;
+}
+
+.art-item19 {
+    position: fixed;
+    bottom: 7vh;
+    right: 14vw;
+    width: 75%;
+}
+
 
 .grid-detail-image {
 	height: 100vh;
 	width: 70vw;
 	padding: 0;
 }
+
+.grid-detail-image-one {
+	height: 100vh;
+	width: 100vw;
+	padding: 0;
+}
+
+.grid-detail-image-double {
+	height: 100vh;
+	width: 140vw;
+	padding: 0;
+}
+
 
 .detail-image {
 	margin-top: 5%;	
@@ -230,7 +400,94 @@ body {
 	margin-right: 10%;
 }
 .title{
+	position: fixed;
+    font-family: Raleway;
 	color: #7A8A9A;
+	bottom: 91vh;
+	right: 40vw;
 }
 
 
+.menu1 {
+    position: fixed;
+    font-family: Raleway;
+    text-decoration: none;
+    color: #788999;
+	bottom: 89vh;
+	right: 90vw;
+}
+  
+.menu2 {
+    position: fixed;
+    font-family: Raleway;
+    text-decoration: none;
+    color: #788999;
+	bottom: 89vh;
+	right: 80vw;
+}
+
+.menu3 {
+    position: fixed;
+    font-family: Raleway;
+    text-decoration: none;
+    color: #788999;
+	bottom: 89vh;
+	right: 70vw;
+}
+
+.menu4 {
+    position: fixed;
+    font-family: Raleway;
+    text-decoration: none;
+    color: #788999;
+	bottom: 89vh;
+	right: 58vw;
+}
+
+.menu5 {
+    position: fixed;
+    font-family: Raleway;
+    text-decoration: none;
+    color: #788999;
+	bottom: 89vh;
+	right: 49vw;
+}
+
+.menu6 {
+    position: fixed;
+    font-family: Raleway;
+    text-decoration: none;
+    color: #788999;
+	bottom: 89vh;
+	right: 40vw;
+}
+
+.menu7 {
+    position: fixed;
+    font-family: Raleway;
+    text-decoration: none;
+    color: #788999;
+	bottom: 89vh;
+	right: 30vw;
+}
+
+.menu8 {
+    position: fixed;
+    font-family: Raleway;
+    text-decoration: none;
+    color: #788999;
+	bottom: 89vh;
+	right: 20vw;
+}
+
+.menu1:hover {
+    color: black;
+}
+  
+.menu2:hover {
+    color: black;
+}
+
+.menu3:hover {
+    color: black;
+}

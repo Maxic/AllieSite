@@ -19,6 +19,9 @@ document.querySelectorAll('div[class*="page"]').forEach(function (item){
 });
 
 
+document.querySelectorAll('div[class*="header"]').forEach(function (item){
+	item.style.backgroundColor = random_pick(pallette);
+});
 // var color1 = random_pick_and_remove(pallette);
 // var color2 = random_pick_and_remove(pallette);
 // var color3 = random_pick_and_remove(pallette);
