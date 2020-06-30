@@ -246,7 +246,7 @@ body {
   display: table;
  /* padding-top: 25vh;*/
   width: 80%;
-  margin: 20vh 10vw;
+  margin: 10vh 10vw;
 }
 
 .img_container3 a {
@@ -337,6 +337,25 @@ body {
 .img_container7 img {
   width: 100%;
   max-width: 400px;
+}
+
+.img_container8 {
+  position: fixed;
+  display: table;
+ /* padding-top: 25vh;*/
+  width: 80%;
+  margin: 15vh 10vw;
+}
+
+.img_container8 a {
+  display: table-cell;
+  text-align: center;
+  width: 13%;
+}
+
+.img_container8 img {
+  width: 80%;
+  max-width: 450px;
 }
 
 
@@ -633,12 +652,13 @@ body {
 	margin-left: 5%;
 	margin-right: 10%;
 }
+
 .title{
 	position: fixed;
     font-family: Raleway;
 	color: #7A8A9A;
-	bottom: 91vh;
-	right: 40vw;
+	bottom: 1vh;
+	right: 85vw;
 }
 
 
