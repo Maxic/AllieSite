@@ -358,6 +358,24 @@ body {
   max-width: 450px;
 }
 
+.img_container9 {
+  position: fixed;
+  display: table;
+ /* padding-top: 25vh;*/
+  width: 80%;
+  margin: 28vh 10vw;
+}
+
+.img_container9 a {
+  display: table-cell;
+  text-align: center;
+  width: 13%;
+}
+
+.img_container9 img {
+  width: 100%;
+  max-width: 420px;
+} 
 
 
 .art-item1 {
